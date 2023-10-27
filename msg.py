@@ -9,7 +9,7 @@ def copiar_para_area_de_transferencia():
     numero_os = entry_numero_os.get() if possui_os else ""
 
     # Estrutura da mensagem
-    mensagem_formatada = f"NOME: {nome}\nRAMAL: {ramal}\nSETOR: {setor}\nMENSAGEM: {mensagem}\nPOSSUI OS? {'SIM' if possui_os else 'NÃO'}\nNUMERO DA OS: {numero_os}"
+    mensagem_formatada = f"Setor: {setor}\nNome: {nome}\Ramal: {ramal}\nRecado: {mensagem}\nPossui OS? {'Sim' if possui_os else 'Não'}\nN° da OS: {numero_os}"
 
     # Copiar mensagem para a área de transferência
     root.clipboard_clear()
@@ -19,7 +19,7 @@ def copiar_para_area_de_transferencia():
 
 # Criar a janela principal
 root = tk.Tk()
-root.title("Formulário")
+root.title("Recados EngCli")
 
 # Criar os campos do formulário
 label_nome = tk.Label(root, text="Nome:")
